@@ -4,15 +4,12 @@ $(document).ready(function() {
 
 var bbchar = ["Spongebob", "Patrick", "Squidward", "Sandy", "Mr Krabs", "Plankton",];
 
+function renderButtons() {
 
-function displayInfo() {
-    var spongebob = $(this).attr("sponge-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + spongebob + "";
+    $("#sponge-buttons").empty();
+    for (i = 0; i < movies.length; i++) {
+    $("#sponge-buttons").append("<button class='btn btn-success' data-sponge='" + bbchar[i] + "'>" + bbchar[i] + "</button>");
+    }
+}
 
-$.ajax({
-    url: queryURL,
-    method: "GET"
-    }).done(function(response) {
-    ("#pineapple").empty();
-    var results = response.data;
-
+renderButtons();
