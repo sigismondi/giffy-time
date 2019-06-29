@@ -13,3 +13,11 @@ function renderButtons() {
 }
 
 renderButtons();
+
+$("#add-char").on("click", function () {
+    event.preventDefault();
+    var bbchar = $("#char-input").val().trim();
+    bbchar.push(bbchar);
+    renderButtons();
+    return;
+});
