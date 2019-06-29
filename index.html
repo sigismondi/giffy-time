@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
+
 <head>
-	<title>Psychic Game</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head> 
+    <meta charset="utf-8">
+    <title>Spongebob Gifs!!</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
 <body>
-<div class="container"> 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">The Javascript Psychic</h1>
-    <p class="lead"> Can you guess what letter I'm thinking of?</p>
-  </div>
-</div>
-<div class="panel panel-default">
-	<div class="panel-body">	
-		<p id = "wins"> Wins: </p>
-		<p id = "losses"> Losses: </p>
-		<p id = "left"> Guesses Left: </p>
-		<p id = "guesses"> Guesses so far: </p>
+    <div class="container">
+		<div class="jumbotron text-center">
+			<h1>Sponge Bob Gifs!</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-8">
+				<div id="sponge-buttons">
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<form id="form">
+					<label for="Char">Add a Bikini Bottom Resident!</label><br>
+					<input type="text" id="Char">
+					<input id="addChar" type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
+					<div id="bbchars">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div>
-<audio controls autoplay loop>
-			<source src="../Psychic-Game/assets/Music/Thinking-music-full-version.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-</audio>
-  </div>
-</div>
-<footer class="page-footer">
-		<div class="footer-copyright text-center">© Collin Sigismondi
-	  </div>
-</footer>
-<script src="assets/javascript/physic.js"> </script>
+    <script type="text/javascript" src="gify.js"></script>
 </body>
+
 </html>
